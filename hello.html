@@ -1,5 +1,24 @@
 <html>
-    <body>
+    <head>
+        <script src="./password.js"></script>
+        <script src="./main.js"></script>
+    </head>
+    <body style="width: 100em;">
         <h1>Hello Extensions</h1>
+        <input type="button" id="button" value="test"/>
+        <select id="MethodType">
+            <option value="GET" selected>GET</option>
+            <option value="POST">POST</option>
+        </select>
+        <input type="text" id="APIString" value="/system/users" />
+        <textarea rows="10" cols="100" id="RequestBody" >
+        {
+            "fields": {
+                "ActualProgress": 80,
+                "PlannedTime": 3000
+            }
+        }
+        </textarea>
+        <div id="result"></div>
     </body>
 </html>
